@@ -1,0 +1,18 @@
+#
+# 設定ファイルのサンプルです。
+# 設定情報を更新のうえ、settings.yamlにRenameして使用してください。
+#
+
+# -- Adapter指定 ---
+adapter_type_name: ""  # デフォルトアダプターを指定
+
+# -- Redmine設定 ---
+redmine_settings:
+  url: ""   #"http://redmine.example.com"         # RedmineのURL
+  api_key: ""   #"your_redmine_api_key"           # RedmineのAPIキー
+
+# --- パス設定 ---
+# プロジェクトルートディレクトリからの相対パスで指定。Docker環境では /data 以下にマウントされます。
+path_settings:
+  input_path: "input"
+  output_path: "output"
