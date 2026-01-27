@@ -19,4 +19,3 @@ Set-Location -Path (Join-Path $PSScriptRoot "..")
 
 # # redmine_exportの実行
 # Invoke-Batch -project "project_name"
-Invoke-Batch -project s0131_develop
