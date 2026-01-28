@@ -10,7 +10,7 @@ function Invoke-Batch {
     Set-Location -Path $PSScriptRoot
     docker run -it --rm `
         -v "$($fullCurrentPath):/data" `
-        -v "$($fullCustomizePath):/app/redmine_export/customizes" `
+        -v "$($fullCustomizePath):/app/src/redmine_export/customizes" `
         ghcr.io/bteam-toku/redmine_export:latest $project
 }
 
